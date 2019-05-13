@@ -1,0 +1,41 @@
+documentation_complete: false
+name: Publication and Repository Responsibilities
+schema_version: 3.0.0
+references:
+- name: United States PKI X.509 Certification Practice Statement for the FPKI Trust
+    Infrastructure v4.11
+  path: https://www.idmanagement.gov/topics/fpkima/
+  type: URL
+satisfies:
+- control_key: Pub-2
+  standard_key: FBCA-CP-2-35
+  covered_by: []
+  implementation_status: complete
+  narrative:
+  - text: Publication and Repository Responsibilities
+    implementation_status: Partially in Place
+- control_key: Pub-2-1
+  standard_key: FBCA-CP-2-35
+  covered_by: []
+  implementation_status: complete
+  narrative:
+  - text: >
+      Repositories. The FPKIMA operates and uses a variety of mechanisms for posting
+      information into a Repository as required by [FBCA CP] and [FCPCA CP]. The use
+      of chaining has been deprecated in favor of HTTP directories. The mechanisms
+      supported and operated include
+
+      - Maintaining an online X.500 Directory Service System supporting Lightweight
+      Directory Access Protocol (LDAP) v3, as directed by the FPKIPA, which allows
+      anonymous access and retrieval of the certificate information including all
+      cross-certificates issued by and to FPKI Trust Infrastructure CAs, as well as
+      the CRLs issued by the FPKI Trust Infrastructure;
+
+      - Maintaining an online web server which allows anonymous access and retrieval
+      of certificate information via HTTP, including all cross-certificates issued
+      by and to the FPKI Trust Infrastructure CAs and the CRLs issued by the FPKI
+      Trust Infrastructure; and
+
+      - Providing administrative access control mechanisms when needed to protect
+      FPKI Repository information as described in later sections.
+    implementation_status: In Place

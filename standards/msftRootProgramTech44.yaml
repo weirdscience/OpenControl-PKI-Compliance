@@ -1,0 +1,94 @@
+name: Microsoft Trusted Root Program Requirements Revision 44
+
+Tech-4:
+  family: Tech
+  name: Program Tech Requirements
+  description: All CAs in the Program must comply with the Program Technical Requirements. If Microsoft determines that a CA is not in compliance with the below requirements, Microsoft will exclude that CA from the Program.
+Tech-4-1:
+  family: Tech
+  name: Root Requirements
+  description: A. Root Requirements
+Tech-4-1-1:
+  family: Tech
+  name: Root Requirements 1
+  description: 
+    1. Root certificates must be x.509 v3 certificates.
+      a. The CN attribute must identify the publisher and must be unique.
+      b. The CN attribute must be in a language that is appropriate for the CA’s market and readable by a typical customer in that market.
+      c. Basic Constraints extension must be cA=true.
+      d. Key Usage extension MUST be present and MUST be marked critical. Bit positions for KeyCertSign and cRLSign MUST be set. If the Root CA Private Key is used for signing OCSP responses, then the digitalSignature bit MUST be set. Root Key Sizes must meet the requirements detailed in “Key Requirements”.
+Tech-4-1-2:
+  family: Tech
+  name: Root Requirements 2
+  description: 2. New roots must be valid for at least eight (8) years from the date of submission.
+Tech-4-1-3:
+  family: Tech
+  name: Root Requirements 3
+  description: 3. New root certificates must expire no more than 25 years after the date of application for distribution.
+Tech-4-1-4:
+  family: Tech
+  name: Root Requirements 4
+  description: 4. The CA may not issue new 1024-bit RSA certificates for SSL/TLS or Code Signing from roots covered by these requirements.
+Tech-4-1-5:
+  family: Tech
+  name: Root Requirements 5
+  description: 5. All end-entity server authentication certificates must contain an AIA extension with a valid OCSP URL. These certificates may also contain a CDP extension that contains a valid CRL URL. All other certificate types must contain either an AIA extension with an OCSP URL or a CDP extension with a valid CRL URL
+Tech-4-1-6:
+  family: Tech
+  name: Root Requirements 6
+  description: 6. Private Keys and subject names must be unique per root certificate; reuse of private keys or subject names in subsequent root certificates by the same CA may result in random certificate chaining issues. CAs must generate a new key and apply a new subject name when generating a new root certificate prior to distribution by Microsoft.
+  Tech-4-1-7:
+  family: Tech
+  name: Root Requirements 7
+  description: 7. All roots that are being used to issue new certificates, and which directly or transitively chain to a certificate included in the Program, must either be limited or be publicly disclosed and audited.
+Tech-4-1-8:
+  family: Tech
+  name: Root Requirements 8
+  description: 8. Government CAs must restrict server authentication to .gov domains and may only issues other certificates to the ISO3166 country codes that the country has sovereign control over (see http://aka.ms/auditreqs Jump section III for the definition of a “Government CA”).
+  Tech-4-1-9:
+  family: Tech
+  name: Root Requirements 9
+  description: Deleted November 2015
+Tech-4-1-10:
+  family: Tech
+  name: Root Requirements 10
+  description: New intermediate CA certificates must meet the requirements for algorithm type and key size for Subordinate CA certificates listed in Section 6.1.5 (or as amended) of the CAB Forum Baseline Requirements, which can be found at https://www.cabforum.org Jump .
+Tech-4-1-11:
+  family: Tech
+  name: Root Requirements 11
+  description: 11. New intermediate CA certificates under root certificates submitted for distribution by the Program must separate Server Authentication, S/MIME, Code Signing, and Time Stamping uses. This means that a single intermediate-issuing CA must not be used to issue server authentication, S/MIME, code signing and time stamping certificates. A separate intermediate must be used for each use case.
+Tech-4-1-12:
+  family: Tech
+  name: Root Requirements 12
+  description: 12. Rollover root certificates, or certificates which are intended to replace previously enrolled but expired certificates, will not be accepted if they combine server authentication with code signing uses unless the uses are separated by application of Extended Key Uses (“EKU”s) at the intermediate CA certificate level that are reflected in the whole certificate chain.
+Tech-4-1-13:
+  family: Tech
+  name: Root Requirements 13
+  description: 13. End-entity certificates must meet the requirements for algorithm type and key size for Subscriber certificates listed in Appendix A of the CAB Forum Baseline Requirements located at https://cabforum.org/baseline-requirements-documents/.
+Tech-4-1-14:
+  family: Tech
+  name: Root Requirements 14
+  description: 14. For Server Authentication certificates, Windows will stop trusting SHA1 certificates by 1 January 2017. This means any SHA1 SSL certificates issued before or after this announcement must be replaced with a SHA2 family of certificates (excluding SHA-224) by January 1, 2017. Please note - Microsoft will not require CAs to replace SHA1 Server Authentication certificates but will no longer trust SHA1 certificates after this date.
+Tech-4-1-15:
+  family: Tech
+  name: Root Requirements 15
+  description: 15. CAs must use  the following OIDs in the end-entity certificate 
+    - DV 2.23.140.1.2.1; 
+    - OV 2.23.140.1.2.2; 
+    - EV 2.23.140.1.1.; 
+    - IV 2.23.140.1.2.3; 
+    - EV Code Signing 2.23.140.1.3; 
+    - Non-EV Code Signing 2.23.140.1.4.1.
+  Tech-4-1-16:
+  family: Tech
+  name: Root Requirements 16
+  description: End-entity certificates that include a Basic Constraints extension in accordance with IETF RFC 5280 must have the cA field set to FALSE and the pathLenConstraint field must be absent.
+Tech-4-1-17:
+  family: Tech
+  name: Root Requirements 17
+  description: A CA must either technically constrain an OCSP responder such that the only EKU allowed is OCSP Signing or it must not use SHA-1 to sign OCSP responses.
+Tech-4-1-18:
+  family: Tech
+  name: Root Requirements 18
+  description: Effective February 1, 2017, all end-entity certificates must contain the EKU for the purpose that the CA issued the certificate to the customer, and the end-entity certificate may not use “any EKU.”
+ 

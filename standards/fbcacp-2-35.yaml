@@ -1,0 +1,77 @@
+name: FBCA-CP-2-35
+Pub-2:
+  family: Pub
+  name: Publication & Repository Responsibilities
+  description: 
+Pub-2-1:
+  family: Pub
+  name: Repositories
+  description: | 
+    The FPKIMA shall operate repositories to support FBCA operations. Entity PKIs are responsible 
+    for operation of repositories to support their PKI operations. Entities who cross-certify 
+    with the FBCA shall ensure interoperability with the FBCA repository.
+Pub-2-1-1:
+  family: Pub
+  name: FBCA Repository Obligations
+  description: |
+    The FPKIMA may use a variety of mechanisms for posting information into a repository as required 
+    by this CP. These mechanisms at a minimum shall include X.500 Directory Server System that is 
+    optionally accessible through the Lightweight Directory Access Protocol, Availability of the 
+    information as required by the certificate information posting and retrieval stipulations of 
+    this CP, and Access control and communication mechanisms when needed to protect repository 
+    information as described in later sections. (Practice Note - The X.500 Directory Server System 
+    supporting LDAP will remain available until such time as the FPKIMA has determined that the 
+    Federal PKI community no longer requires Directory System Protocol (DSP)).
+Pub-2-2:
+  family: Pub
+  name: Publication of Certification Information
+  description:
+Pub-2-2-1:
+  family: Pub
+  name: Publication of Certificates and Certificate Status
+  description: | 
+    CA and End Entity certificates shall only contain valid Uniform Resource Identifiers (URIs) 
+    that are accessible by relying parties. The FPKIMA shall publish all CA certificates issued 
+    by or to the FBCA and all CRLs issued by the FBCA in the FBCA repository.  At a minimum, the 
+    Entity repositories shall contain all CA certificates issued by or to the Entity PKI and CRLs 
+    issued by the Entity PKI. For the FBCA, mechanisms and procedures shall be designed to ensure 
+    CA certificates and CRLs are available for retrieval 24 hours a day, 7 days a week, with a 
+    minimum of 99% availability overall per year and scheduled down-time not to exceed 0.5% annually. 
+    Entity CAs being considered for cross certification shall be designed to comply with this 
+    requirement.
+Pub-2-2-2:
+  family: Pub
+  name: Publication of CA Information
+  description: | 
+    The FPKIMA shall publish information concerning the FBCA necessary to support its use and operation. 
+    The FBCA CP shall be publicly available on the FPKIPA website 
+    (see http://www.idmanagement.gov/fpkipa).  The FBCA CPS will not be published; a redacted version 
+    of the CPS will be publicly available from the FPKIPA website 
+    (see http://www.idmanagement.gov/fpkipa). Publication of CA information in the Entity repositories 
+    is a local decision.
+Pub-2-2-3:
+  family: Pub
+  name: Interoperability
+  description: | 
+    Where certificates and CRLs are published in directories, standards-based schemas for directory 
+    objects and attributes are recommended.  Detailed information is available in technical guidance 
+    from the FPKIMA; for more information, see the FPKIMA website 
+    (see http://www.idmanagement.gov/fpkima).
+Pub-2-3:
+  family: Pub
+  name: Frequency of Publication
+  description: | 
+    This CP and any subsequent changes shall be made publicly available within thirty days of 
+    approval.
+Pub-2-4:
+  family: Pub
+  name: Access Controls on Repositories
+  description: | 
+    The FPKIMA and Entity CAs shall protect any repository information not intended for public 
+    dissemination or modification. Certificates and certificate status information in the FBCA 
+    repository shall be publicly available through the Internet. Direct and/or remote access 
+    to information in Entity CA repositories shall be determined by the Entity pursuant to the 
+    rules and statutes that apply to that entity. Certificates and certificate status information 
+    in the Entity repository should be publicly available through the Internet wherever reasonable. 
+    At a minimum, the Entity repositories shall make CA certificates and CRLs issued by the Entity 
+    PKI and CA certificates issued to the Entity PKI available to Federal Relying Parties.

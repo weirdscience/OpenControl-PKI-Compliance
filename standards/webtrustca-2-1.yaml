@@ -1,0 +1,53 @@
+name: WebTrust-CA-2-1
+CABCP-2:
+  family: CABCP
+  name: CA Business Practices Management
+  description: 
+CABCP-2-1-4:
+  family: CABCP
+  name: Certification Practice Statement (CPS) Management 
+  description: 2.1.4 The CA makes available its Certification Practice Statement (CPS) to all appropriate parties.
+CABCP-2-1-5:
+  family: CABCP
+  name: Certification Practice Statement (CPS) Management 
+  description: 2.1.5 Revisions to the CA’s CPS are made available to appropriate parties.
+CABCP-2-2-5:
+  family: CABCP
+  name: Certificate Policy (CP) Management
+  description: 2.2.5 The PA makes available the Certificate Policies supported by the CA to Subscribers and Relying Parties.
+CAEC-3-2:
+  family: CAEC
+  name: Asset Classification and Management
+  description: The CA maintains controls to provide reasonable assurance that CA assets and subscriber and relying party information receive an appropriate level of protection based upon identified risks and in accordance with the CA’s disclosed business practices.
+CLF-6-5:
+  family: CLF
+  name: Certificate Distribution
+  description: The CA maintains controls to provide reasonable assurance that, upon issuance, complete and accurate certificates are available to subscribers and relying parties in accordance with the CA’s disclosed business practices.
+CLF-6-5-1:
+  family: CLF
+  name: Certificate Distribution
+  description: 6.5.1 The CA makes the certificates issued by the CA available to relevant parties using an established mechanism (e.g., a repository such as a directory) in accordance with the CP.
+CLF-6-5-2:
+  family: CLF
+  name: Certificate Distribution
+  description: 6.5.2 Only authorised CA personnel administer the CA’s repository or alternative distribution mechanism.
+CLF-6-5-3:
+  family: CLF
+  name: Certificate Distribution
+  description: 6.5.3 The performance of the CA’s repository or alternative distribution mechanism is monitored and managed.
+CLF-6-5-4:
+  family: CLF
+  name: Certificate Distribution
+  description: 6.5.4 The integrity of the repository or alternative distribution mechanism is maintained and administered.
+CLF-6-5-5:
+  family: CLF
+  name: Certificate Distribution
+  description: 6.5.5 Where required under privacy legislation, certificates are made available for retrieval only in those cases for which the subscriber’s consent is obtained.
+CLF-6-8-1:
+  family: CLF
+  name: Certification Validation
+  description: "6.8.1 The CA makes certificate status information available to relevant entities (Relying Parties or their agents) using an established mechanism in accordance with the CP. This is achieved using:"
+SCACCLMC-7-1-10:
+  family: SCACCLMC
+  name: Subordinate CA Certificate and Cross Certificate Lifecycle Management 
+  description: 7.1.10 The Parent CA makes Sub-CA and cross certificates available to relevant entities (e.g., Relying Parties) using an established mechanism (e.g., a repository such as a directory) in accordance with the Parent CA’s CP.
