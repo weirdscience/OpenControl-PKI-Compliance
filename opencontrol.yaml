@@ -1,0 +1,17 @@
+schema_version: "1.0.0"
+name: PKI Compliance Pilot
+metadata:
+  description:
+  maintainers:
+    - kenneth.myers@gsa.gov
+components:
+  - ./components/CPS2_Pub
+standards:
+  - ./standards/fbcacp-2-35.yaml
+  - ./standards/msftRootProgramTech44.yaml
+  - ./standards/webtrustca-2-1.yaml
+dependenices:
+  certifications:
+    - ./certifications/MSFTRoot-44.yaml
+    - ./certifications/FBCA-235.yaml
+    - ./certifications/WebTrustCA-21.yaml
