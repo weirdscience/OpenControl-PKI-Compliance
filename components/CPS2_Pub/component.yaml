@@ -38,4 +38,3 @@ satisfies:
 
       - Providing administrative access control mechanisms when needed to protect
       FPKI Repository information as described in later sections.
-    implementation_status: In Place
