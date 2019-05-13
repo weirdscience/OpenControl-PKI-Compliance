@@ -1,0 +1,17 @@
+#WebTrust for CA version 2.1
+name: WebTrustCA-21
+standards:
+  WebTrustCA-21:
+    CABCP-2:
+    CABCP-2-1-4:
+    CABCP-2-1-5:
+    CABCP-2-2-5:
+    CAEC-3-2:
+    CLF-6-5:
+    CLF-6-5-1:
+    CLF-6-5-2:
+    CLF-6-5-3:
+    CLF-6-5-4:
+    CLF-6-5-5:
+    CLF-6-8-1:
+    SCACCLMC-7-1-10:
